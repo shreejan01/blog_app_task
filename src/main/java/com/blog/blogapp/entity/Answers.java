@@ -21,7 +21,7 @@ public class Answers {
     static void findNDigitSum(String result, int n , int target) {
         //base case
         //if n is less than n-digit and its sum of digit is less than given sum
-        if (n>0 && target<=0) {
+        if (n>0 && target>=0) {
             char d = '0';
             if (result.equals("")) {  //case number cannot start from 0
                 d = '1';
@@ -49,13 +49,4 @@ public class Answers {
         findNDigitSum(result,num,target);
     }
 
-    /*
-
-
-    1. Ans....
-
-
-
-
-     */
 }
